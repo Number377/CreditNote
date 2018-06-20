@@ -62,7 +62,7 @@ namespace WpfCreditNote
             }
 
         // 存檔
-        System.IO.File.WriteAllLines(@"C:\data.txt", datas);
+        System.IO.File.WriteAllLines(@"C:\test\data.txt", datas);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -71,7 +71,7 @@ namespace WpfCreditNote
             try
             {
                 // 開檔(預設為D:\data.txt)
-                string[] lines = System.IO.File.ReadAllLines(@"C:\data.txt");
+                string[] lines = System.IO.File.ReadAllLines(@"C:\test\data.txt");
 
                 // 解析每一行
                 foreach (string line in lines)
